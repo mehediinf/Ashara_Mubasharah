@@ -14,6 +14,8 @@ public class SplashScreen extends AppCompatActivity {
 
 private ProgressBar progressBar;
 
+int progressNum;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,18 +26,33 @@ private ProgressBar progressBar;
         Thread thread = new Thread(new Runnable() {
             @Override
             public void run() {
-                try {
-                    Thread.sleep(3000);
-                    startActivity(new Intent(SplashScreen.this,MainActivity.class));
-                    finish();
-                } catch (InterruptedException e) {
-                    throw new RuntimeException(e);
-                }
+
+                //Progress Method call
+                doWprk();
+
+                //Next Page Call
+                startApp();
+
             }
         });
         thread.start();
 
 
 
+    }
+    public void doWprk(){
+        for (progressNum=20;progressNum<=100;progressNum+=20){
+            try {
+                Thread.sleep(600);
+                progressBar.setProgress(progressNum);
+
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+        }
+    }
+    public void startApp(){
+        startActivity(new Intent(SplashScreen.this,MainActivity.class));
+        finish();
     }
 }

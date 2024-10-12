@@ -1,14 +1,19 @@
 <resources>
     <string name="app_name">AsharaMubasharah</string>
-    <string name="abu_bakr">Abu Bakr (RA)</string>
-    <string name="umar_ibn_al_khattab">Umar ibn al-Khattab (RA)</string>
-    <string name="uthman_ibn_affan">Uthman ibn Affan (RA)</string>
-    <string name="ali_ibn_abi_talib">Ali ibn Abi Talib (RA)</string>
-    <string name="talhah_ibn_ubaidullah">Talhah ibn Ubaidullah (RA)</string>
-    <string name="zubayr_ibn_al_awam">Zubayr ibn al-Awam (RA)</string>
-    <string name="abdur_rahman_ibn_awf">Abdur-Rahman ibn Awf (RA)</string>
-    <string name="sad_ibn_abi_waqqas">Sa’d ibn Abi Waqqas (RA)</string>
-    <string name="said_ibn_zayd">Sa’id ibn Zayd (RA)</string>
-    <string name="abu_ubaidah_ibn_al_jarrah">Abu Ubaidah ibn al-Jarrah (RA)</string>
+
+
+    <string-array name="ashara_mubasharah">
+        <item>Abu Bakr (RA)</item>
+        <item>Umar ibn al-Khattab (RA)</item>
+        <item>Uthman ibn Affan (RA)</item>
+        <item>Ali ibn Abi Talib (RA)</item>
+        <item>Talhah ibn Ubaidullah (RA)</item>
+        <item>Zubayr ibn al-Awam (RA)</item>
+        <item>Abdur-Rahman ibn Awf (RA)</item>
+        <item>Sa’d ibn Abi Waqqas (RA)</item>
+        <item>Sa’id ibn Zayd (RA)</item>
+        <item>Abu Ubaidah ibn al-Jarrah (RA)</item>
+    </string-array>
+
 
 </resources>

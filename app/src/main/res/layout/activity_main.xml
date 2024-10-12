@@ -5,19 +5,19 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:gravity="center"
+    android:background="@color/colorAccent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
 
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hi ,this is a MainActivity"
-        android:textSize="30sp"
+    <ListView
+        android:id="@+id/listViewId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:listSelector="@color/colorAccentGreen"
+        android:dividerHeight="2dp"
+        android:divider="@color/colorCyan"
         />
-
-
 
 
 

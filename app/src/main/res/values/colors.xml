@@ -9,6 +9,11 @@
     <color name="colorLightBlue">#03A9F4</color>
     <color name="colorCyan">#00BCD4</color>
     <color name="colorTeal">#009688</color>
+    <color name="colorPrimary">#00cccc</color>
+    <color name="colorPrimaryDark">#006666</color>
+    <color name="colorIt">#188596</color>
+    <color name="colorAccent">#BBF1F1</color>
+    <color name="colorAccent1">#1397B1</color>
     <color name="colorGreen">#4CAF50</color>
     <color name="colorLightGreen">#8BC34A</color>
     <color name="colorLime">#CDDC39</color>
