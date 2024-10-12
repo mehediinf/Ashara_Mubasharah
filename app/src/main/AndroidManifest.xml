@@ -13,6 +13,36 @@
         android:theme="@style/Theme.AsharaMubasharah"
         tools:targetApi="31">
         <activity
+            android:name=".Abu_ubaidah_ibn_al_jarrahActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Saeed_ibn_zaydActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Saad_ibn_abu_waqqasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Abdur_rahman_ibn_awfActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Zubayr_ibn_al_awamActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Talhah_ibn_ubaidullahActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Ali_ibn_abi_talibActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Uthman_ibn_affanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Umar_ibn_al_khattabActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AbuBakrActivity"
+            android:exported="false" />
+        <activity
             android:name=".SplashScreen"
             android:exported="true">
             <intent-filter>
