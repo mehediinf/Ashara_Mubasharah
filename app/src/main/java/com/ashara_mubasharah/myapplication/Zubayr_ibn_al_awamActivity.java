@@ -10,7 +10,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class Zubayr_ibn_al_awamActivity extends AppCompatActivity {
+public class Zubayr_ibn_al_awamActivity extends BaseActivity {
 
 
     TextView textView2;
@@ -20,6 +20,9 @@ public class Zubayr_ibn_al_awamActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_zubayr_ibn_al_awam);
 
+
+        // `setupToolbar` মেথড কল করে টাইটেল এবং ব্যাক বাটন সেট করা
+        setupToolbar("সংক্ষিপ্ত জীবনী", true);
 
         textView2 = findViewById(R.id.txt2Id);
         textView2.setText(Html.fromHtml(getString(R.string.jubair_ibn_awan_biography)));

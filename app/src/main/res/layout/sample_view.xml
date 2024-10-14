@@ -29,13 +29,12 @@
             android:textSize="20sp"
             android:gravity="left|center"
             android:textStyle="bold"
-            android:textColor="#55595C"
+            android:textColor="#050505"
+
             />
 
 
     </LinearLayout>
-
-
 
 
 </LinearLayout>

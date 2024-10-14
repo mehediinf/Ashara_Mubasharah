@@ -3,13 +3,19 @@ package com.ashara_mubasharah.myapplication;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.SearchView;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import androidx.appcompat.widget.Toolbar;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -17,6 +23,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class MainActivity extends BaseActivity {
 
     private ListView listView;
+    BaseAdapter baseAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +50,7 @@ public class MainActivity extends BaseActivity {
 
         // Custom adapter setup
         // Set adapter to listView
+
         listView.setAdapter(new BaseAdapter() {
             @Override
             public int getCount() {
@@ -58,6 +66,10 @@ public class MainActivity extends BaseActivity {
             public long getItemId(int position) {
                 return 0;
             }
+
+
+
+
 
             @Override
             public View getView(int position, View convertView, ViewGroup parent) {
@@ -136,6 +148,57 @@ public class MainActivity extends BaseActivity {
         });
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater menuInflater = getMenuInflater();
+        menuInflater.inflate(R.menu.menu_layout,menu);
 
+        MenuItem menuItem = menu.findItem(R.id.menuSrcId);
+        SearchView searchView = (SearchView) menuItem.getActionView();
 
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String s) {
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String s) {
+
+                //adapter.getFilter().filter(s);
+                return false;
+            }
+        });
+
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        if (item.getItemId()==R.id.menuSettingId){
+            Toast.makeText(MainActivity.this,"Settings",Toast.LENGTH_SHORT).show();
+        }
+        else if (item.getItemId()==R.id.menuShareId){
+
+            Intent intent = new Intent(Intent.ACTION_SEND);
+            intent.setType("text/plain");
+
+            String subject ="আশারায়ে মুবাশশারাহ অ্যাপ";
+            String body = "আশারায়ে মুবাশশারাহ অ্যাপ থেকে ইসলামের দশজন বিশিষ্ট সাহাবির সম্পর্কে জানতে পারবেন, যাদের মুহাম্মদ (সা.) জীবদ্দশায় জান্নাতের সুসংবাদ দিয়েছিলেন। \n App Link: com.ashara_mubasharah.myapplication";
+
+            intent.putExtra(Intent.EXTRA_SUBJECT,subject);
+            intent.putExtra(Intent.EXTRA_TEXT,body);
+
+            startActivity(Intent.createChooser(intent,"Share with"));
+
+        }else if (item.getItemId()==R.id.menuFeedbackId){
+
+            Intent intent = new Intent(getApplicationContext(),FeedbackActivity.class);
+            startActivity(intent);
+
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
 }

@@ -10,7 +10,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class Ali_ibn_abi_talibActivity extends AppCompatActivity {
+public class Ali_ibn_abi_talibActivity extends BaseActivity {
 
     TextView textView2;
 
@@ -18,6 +18,9 @@ public class Ali_ibn_abi_talibActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ali_ibn_abi_talib);
+
+        // `setupToolbar` মেথড কল করে টাইটেল এবং ব্যাক বাটন সেট করা
+        setupToolbar("সংক্ষিপ্ত জীবনী", true);
 
         textView2 = findViewById(R.id.txt2Id);
         textView2.setText(Html.fromHtml(getString(R.string.ali_ibn_abu_talib_biography)));

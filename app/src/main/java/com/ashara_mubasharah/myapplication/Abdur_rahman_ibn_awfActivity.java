@@ -10,13 +10,16 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class Abdur_rahman_ibn_awfActivity extends AppCompatActivity {
+public class Abdur_rahman_ibn_awfActivity extends BaseActivity {
     TextView textView2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abdur_rahman_ibn_awf);
+
+        // `setupToolbar` মেথড কল করে টাইটেল এবং ব্যাক বাটন সেট করা
+        setupToolbar("সংক্ষিপ্ত জীবনী", true);
 
         textView2 = findViewById(R.id.txt2Id);
         textView2.setText(Html.fromHtml(getString(R.string.abdul_rahman_ibn_auf_biography)));
