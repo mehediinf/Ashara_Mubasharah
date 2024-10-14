@@ -14,7 +14,7 @@
         <ImageView
             android:id="@+id/imgSampleViewId"
             android:layout_width="0dp"
-            android:layout_height="60dp"
+            android:layout_height="50dp"
             android:layout_weight=".4"
             android:src="@drawable/one"
             android:layout_gravity="center"
@@ -26,7 +26,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1.5"
             android:text="Hi ,I am Mehedi Hasan"
-            android:textSize="25sp"
+            android:textSize="20sp"
             android:gravity="left|center"
             android:textStyle="bold"
             android:textColor="#55595C"

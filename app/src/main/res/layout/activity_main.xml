@@ -5,9 +5,17 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:gravity="center"
+    android:orientation="vertical"
     android:layout_height="match_parent"
     android:background="#EEF6F6"
     tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#84BA44"
+        android:titleTextColor="@color/colorBlack" />
 
 
     <ListView

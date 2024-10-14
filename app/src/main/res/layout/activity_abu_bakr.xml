@@ -6,12 +6,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".AbuBakrActivity">
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:background="#F8FAF6"
         android:layout_margin="5dp"
         >
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#84BA44"
+            android:titleTextColor="@color/colorBlack" />
 
         <TextView
             android:id="@+id/txt1Id"
@@ -20,6 +28,7 @@
             android:text="@string/abu_bakar"
             android:gravity="center"
             android:textStyle="bold"
+            android:textColor="#050505"
             android:textSize="25sp"
             android:layout_weight=".01"
             />
@@ -28,6 +37,7 @@
             android:id="@+id/txt2Id"
             android:layout_width="match_parent"
             android:layout_height="0dp"
+            android:textColor="#050505"
             android:layout_weight=".9"
             android:text="@string/abu_bakar_info"
             android:layout_margin="5dp"

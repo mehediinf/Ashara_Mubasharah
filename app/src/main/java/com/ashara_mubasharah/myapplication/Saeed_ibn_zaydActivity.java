@@ -1,6 +1,8 @@
 package com.ashara_mubasharah.myapplication;
 
 import android.os.Bundle;
+import android.text.Html;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,15 +12,16 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class Saeed_ibn_zaydActivity extends AppCompatActivity {
 
+    TextView textView2;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_saeed_ibn_zayd);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
+
+        textView2 = findViewById(R.id.txt2Id);
+        textView2.setText(Html.fromHtml(getString(R.string.saeed_ibn_zaid_biography)));
+
+
     }
 }
