@@ -3,6 +3,13 @@
     <string name="actionBarTitelString">আশারা মুবাশারা</string>
 
 
+    <!-- ভাষার অপশন -->
+    <string-array name="languages">
+        <item>English</item>
+        <item>Bangla</item>
+    </string-array>
+
+
     <string name="uthman_ibn_affan_biography">
         <![CDATA[
         <p>উসমান ইবনে আফফান (রা.) ছিলেন ইসলামের তৃতীয় খলিফা এবং একজন বিশিষ্ট সাহাবি। তিনি ছিলেন নবী মুহাম্মদ (সা.) এর ঘনিষ্ঠ বন্ধু এবং ইসলামের প্রথম যুগের অন্যতম গুরুত্বপূর্ণ ব্যক্তিত্ব। তার শাসনামলে মুসলিম সমাজে অনেক গুরুত্বপূর্ণ পরিবর্তন ও উন্নতি সাধিত হয়।</p>

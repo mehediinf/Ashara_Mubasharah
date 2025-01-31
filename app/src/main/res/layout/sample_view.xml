@@ -28,7 +28,6 @@
             android:text="Hi ,I am Mehedi Hasan"
             android:textSize="20sp"
             android:gravity="left|center"
-            android:textStyle="bold"
             android:textColor="#050505"
 
             />

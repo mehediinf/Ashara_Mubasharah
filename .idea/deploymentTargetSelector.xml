@@ -4,10 +4,10 @@
     <selectionStates>
       <SelectionState runConfigName="app">
         <option name="selectionMode" value="DROPDOWN" />
-        <DropdownSelection timestamp="2024-10-14T10:18:05.457157010Z">
+        <DropdownSelection timestamp="2025-01-31T22:27:02.258444672Z">
           <Target type="DEFAULT_BOOT">
             <handle>
-              <DeviceId pluginId="LocalEmulator" identifier="path=/home/mehedi/.android/avd/Mehedi_API_35.avd" />
+              <DeviceId pluginId="PhysicalDevice" identifier="serial=MZ59CIROAQE6JZZH" />
             </handle>
           </Target>
         </DropdownSelection>
